@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="komputasi.css"/>
+<head>
+<title>Tombol Pembelian Buah</title>
+</head>
+
+<body>
+
+<h2 class="pilih">Rambutan Kampung Durian Runtuh</h2>
+
+<div class="harga">
+<table border="1" style="color: white;">
+    <thead>
+        <tr>
+            <td> Harga Perkilo Gram</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>RP.15.000</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div>
+
+</div>
+</div>
+
+      <div class="container-content">
+        <img src="ChatGPT Image Mar 9, 2026, 06_05_47 PM.png" class="img-content"/>
+      </div>
+<div class="QR">
+    Silahkan Lakukan Pembayaran pada QR Berikut
+</div>
+<div class="container-content">
+            <img src="WhatsApp Image 2026-03-09 at 16.50.12.jpeg" class="img-content"/>
+</div>
+<div>
+    <h2>Kirim Ulasan atau Jika Anda Bingung Cara Pembelian dan Pengirimannya</h2>
+
+<textarea id="ulasan" placeholder="Tulis ulasan Anda di sini..." rows="5" cols="40"></textarea>
+<br><br>
+
+<button onclick="kirimWA()" style="background-color:green; color:white; padding:10px; font-size:16px;">
+Kirim Ulasan ke WhatsApp
+</button>
+
+<script>
+
+function kirimWA() {
+
+var ulasan = document.getElementById("ulasan").value;
+
+var nomor = "6282196903352"; 
+
+var url = "https://wa.me/" + nomor + "?text=" + encodeURIComponent("Ulasan saya: " + ulasan);
+
+window.open(url, "_blank");
+
+}
+
+</script>
+
+</div>
+<div>
+    <a button onclick="tidakBeli()" style="background-color:skyblue; color:white; padding:15px; font-size:16px;" href="Komputasi.html" class="back">
+Back To Home </a>
+
+</div>
+    
+      <div>
+        <h1 class="fh1">
+            Semoga Puas dengan Layanan Kami
+            
+        </h1>
+      </div>
+      
+
+
+</body>
+</html>
